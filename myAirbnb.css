@@ -758,7 +758,7 @@ p{
 
         .card-item {
             flex: 0 0 auto;
-            width: 160px;
+            width: 200px;
             display: flex;
             flex-direction: column;
             gap: 6px; /* space between image and text */
