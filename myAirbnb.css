@@ -473,9 +473,10 @@ p{
             color: gray;
             background-color: white;
         }
-        .bottom-nav svg{
+         .bottom-nav svg{
             width: 30px;
         }
+        /*
         .nav2 svg{
             stroke: black;
             stroke-width: 1.5;
@@ -502,15 +503,104 @@ p{
         .nav3 {
             stroke: black;
             stroke-width: 1.5;
+        } */
+        .bottom-nav div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        color: gray; /* default text color */
+        cursor: pointer;
         }
+
+        .bottom-nav div svg {
+        stroke: gray; /* default icon color */
+        stroke-width: 1.5;
+        transition: all 0.3s;
+        }
+
+        .bottom-nav div.active {
+        color: red; /* text color when active */
+        }
+
+        .bottom-nav div.active svg {
+        stroke: red; /* icon color when active */
+        stroke-width: 1.5;
+        }
+ 
         .top-right{
             display: none;
+        }
+
+        .tab-content {
+        display: none;
+        /* padding: 20px; */
+        margin-bottom: 80px;
+        }
+
+        .tab-content.active {
+        display: block;
+        }
+
+        .wish-txt{
+            margin-left: 20px;
+            margin-top: 30px;
+        }
+        .wish-txt h2{
+            font-size: 30px;
+            font-weight: 680;
+        }
+        .log-view-wish{
+            margin-top: 25px;
+            margin-left: 20px;
+        }
+        .log-view-wish p{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .wish-log{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .wish-log{
+            font-size: 15px;
+            font-weight: 420;
+            color: gray;
+        }
+        .logIn-wish{
+            display: flex;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 90px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(226, 28, 84);
+            justify-content: center;
+            align-items: center;
+        }
+        .logIn-wish p{
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+        }
+
+        #Login p{
+            margin-left: 80px;
+            margin-top: 150px;
+        }
+        #Login img{
+            position: absolute;
+            width: 100px;
+            left: 20%;
         }
 }
 
 @media (min-width: 600px) {
 
             /* .box{} */
+            #wishlists, #Login{
+                display: none;
+            }
 
             .Header-box{
             position: relative;
