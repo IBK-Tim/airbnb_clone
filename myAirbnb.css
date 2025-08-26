@@ -633,15 +633,88 @@ p{
             color: white;
         }
 
-        #Login p{
-            margin-left: 80px;
-            margin-top: 150px;
-        }
         #Login img{
             position: absolute;
             width: 100px;
             left: 20%;
         }
+        .login-signup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55px;
+            border-bottom: 1.5px rgba(0, 0, 0, 0.148) solid;
+        }
+        .login-signup p{
+            font-weight: 500;
+        }
+        .h2{
+            margin-top: 35px;
+            margin-left: 30px;
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+        .fgroup{
+            display: flex;
+            flex-direction: column;
+            margin-left: 28px;
+            justify-content: center;
+            align-items: center;
+            width: 320px;
+            height: 120px;
+            border: 1.5px solid rgba(0, 0, 0, 0.403);
+            margin-bottom: 5px;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .country-grp select{
+            border: none;
+            outline: none;
+        }
+        .country-grp{
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            height: 60px;
+            border-bottom: 1.5px solid  rgba(0, 0, 0, 0.403);
+            outline: none;
+            padding-left: 10px;
+        }
+        .phone-grp{
+            display: flex;
+            height: 60px;
+            /* border: 1.5px solid  rgba(0, 0, 0, 0.403);   */
+            padding-left: 20px;          
+        }
+        .label{
+            font-size: 12px;
+            color: gray;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .phone-grp input{
+            width: 320px;
+            border: none;
+            outline: none;
+        }
+        .phone-grp input:focus-visible{
+            border: none;
+        }
+        .or{
+            text-align: center;
+            margin-top: 15px;
+        }
+        .or::before,
+        .or::after {
+        content: "";
+        display: inline-block;
+        width: 138px;          /* line length */
+        height: 1.5px;          /* line thickness */
+        background: #00000020;     /* line color */
+        margin: 0 10px;       /* spacing between line & text */
+        vertical-align: middle;
+        }
+        
 }
 
 @media (min-width: 600px) {
